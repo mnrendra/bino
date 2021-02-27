@@ -1,0 +1,47 @@
+{
+  "name": "@mnrendra/bino",
+  "version": "0.1.0",
+  "description": "My first public node binary",
+  "private": false,
+  "main": "lib/index.js",
+  "bin": {
+    "bino": "./bin/bino.js"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib && npx babel src --out-dir lib && npm --no-git-tag-version version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnrendra/bino.git"
+  },
+  "keywords": [
+    "@mnrendra/bino",
+    "mnrendra",
+    "bino"
+  ],
+  "author": "Muhammad Rendra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnrendra/bino/issues"
+  },
+  "homepage": "https://github.com/mnrendra/bino#readme",
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/preset-react": "^7.12.13"
+  }
+}
