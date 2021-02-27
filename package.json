@@ -1,11 +1,11 @@
 {
   "name": "@mnrendra/bino",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "My first public node binary",
   "private": false,
   "main": "lib/index.js",
   "bin": {
-    "bino": "./bin/bino.js"
+    "bino": "bin/bino.js"
   },
   "engines": {
     "node": ">=8.10.0"
